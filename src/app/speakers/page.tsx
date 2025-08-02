@@ -24,60 +24,57 @@ type SpeakerData = Speaker | RevealingSoon;
 const SpeakersPage = () => {
   const speakers: SpeakerData[] = [
     {
-      name: 'Alex Thompson',
-      title: 'Senior Full-Stack Developer',
-      imageUrl: '/aya.jpg',
-      handle: 'alexthompson',
+      name: 'Subhasis Chatterjee',
+      title: 'Founder & CEO ConnectIndia',
+      imageUrl: '/speakers/SubhasisUncle.png',
+      handle: 'subhasischatterjee',
       status: 'Speaking Soon',
-      socials: { twitter: '#', linkedin: '#' },
+      socials: { twitter: '#', linkedin: 'https://www.linkedin.com/in/subhasischatterjee1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2Kcf6CZ7QGqBiNT7V7OCEg%3D%3D' },
     },
     {
-      name: 'Sarah Chen',
-      title: 'UX/UI Design Director',
-      imageUrl: '/Ay.webp',
-      handle: 'sarahchen',
-      status: 'Keynote Speaker',
-      socials: { twitter: '#', linkedin: '#' },
+      name: 'Subrata Sarkar',
+      title: 'Web & Platform developer,\nemfluence, USA',
+      imageUrl: '/speakers/SubrataUncle.png',
+      handle: 'sarkarsubrata',
+      status: 'Speaking Soon',
+      socials: { twitter: '#', linkedin: 'https://www.linkedin.com/in/sarkarsubrata?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BILoknM74ScqRFOyv13ZRwQ%3D%3D' },
     },
     {
-      name: 'Marcus Rivera',
-      title: 'DevOps & Cloud Architect',
-      imageUrl: '/aya.jpg',
-      handle: 'marcusrivera',
-      status: 'Workshop Leader',
-      socials: { twitter: '#', linkedin: '#' },
+      name: 'Tristup Ghosh',
+      title: 'Consulting',
+      imageUrl: '/speakers/TristupUncle.jpg',
+      handle: 'tristup-ghosh',
+      status: 'Speaking Soon',
+      socials: { twitter: '#', linkedin: 'https://www.linkedin.com/in/tristup-ghosh-89659863?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLV1eAF45Sp2muF96zO5OTg%3D%3D' },
     },
     {
-      name: 'Dr. Emma Watson',
-      title: 'AI/ML Research Scientist',
-      imageUrl: '/Ay.webp',
-      handle: 'emmawatson',
-      status: 'Tech Talk',
-      socials: { twitter: '#', linkedin: '#' },
+      name: 'Ritika Roy',
+      title: 'Content & Social Media Marketer',
+      imageUrl: '/speakers/RitikaDidi.png',
+      handle: 'ritika-roy',
+      status: 'Speaking Soon',
+      socials: { twitter: '#', linkedin: 'https://www.linkedin.com/in/ritika-roy-8792b257?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXcK2qhKFTFWkVmSJDqtq8w%3D%3D' },
     },
     {
-      name: 'James Park',
-      title: 'Product Strategy Lead',
-      imageUrl: '/aya.jpg',
-      handle: 'jamespark',
-      status: 'Panel Discussion',
-      socials: { twitter: '#', linkedin: '#' },
+      name: 'Sudipta Roy',
+      title: 'Software Engineer,\nVirtual Employee Pvt. Ltd.',
+      imageUrl: '/speakers/SudiptoDa.png',
+      handle: 'sudipta-roy',
+      status: 'Speaking Soon',
+      socials: { twitter: '#', linkedin: 'https://www.linkedin.com/in/sudipto-roy-672a08144?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkHH%2BYPNbS5eFWc%2Fe7MaHjg%3D%3D' },
     },
-    {
-      name: 'Lisa Rodriguez',
-      title: 'Digital Marketing Expert',
-      imageUrl: '/Ay.webp',
-      handle: 'lisarodriguez',
-      status: 'Case Study',
-      socials: { twitter: '#', linkedin: '#' },
-    },
+    { revealingSoon: true },
     { revealingSoon: true },
     { revealingSoon: true },
   ];
 
   const handleContactClick = (speaker: Speaker) => {
-    // Handle contact/social navigation
-    console.log(`Contacting ${speaker.name}`);
+    // Open LinkedIn profile in new tab
+    if (speaker.socials.linkedin && speaker.socials.linkedin !== '#') {
+      window.open(speaker.socials.linkedin, '_blank', 'noopener,noreferrer');
+    } else {
+      console.log(`No LinkedIn profile available for ${speaker.name}`);
+    }
   };
 
   return (
@@ -92,7 +89,7 @@ const SpeakersPage = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-10">
           {speakers.map((speaker, index) =>
             'revealingSoon' in speaker ? (
               <div
@@ -112,7 +109,7 @@ const SpeakersPage = () => {
               <ProfileCard
                 key={index}
                 avatarUrl={speaker.imageUrl}
-                miniAvatarUrl={speaker.imageUrl}
+                //miniAvatarUrl={speaker.imageUrl}
                 name={speaker.name}
                 title={speaker.title}
                 handle={speaker.handle}
