@@ -33,7 +33,7 @@ const SpeakersPage = () => {
     },
     {
       name: 'Subrata Sarkar',
-      title: 'Web & Platform developer, emfluence, USA',
+      title: 'Web & Platform developer,\nemfluence, USA',
       imageUrl: '/SubrataUncle.jpg',
       handle: 'sarkarsubrata',
       status: 'Speaking Soon',
@@ -44,7 +44,7 @@ const SpeakersPage = () => {
       title: 'Consulting',
       imageUrl: '/TristupUncle.jpg',
       handle: 'tristup-ghosh',
-      status: 'Workshop Conductor',
+      status: 'Speaking Soon',
       socials: { twitter: '#', linkedin: 'https://www.linkedin.com/in/tristup-ghosh-89659863?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLV1eAF45Sp2muF96zO5OTg%3D%3D' },
     },
     {
@@ -57,8 +57,8 @@ const SpeakersPage = () => {
     },
     {
       name: 'Sudipta Roy',
-      title: 'Software Engineer, Virtual Employee Pvt. Ltd.',
-      imageUrl: '/SudiptoDa.jpg',
+      title: 'Software Engineer,\nVirtual Employee Pvt. Ltd.',
+      imageUrl: '/SudiptoDa.png',
       handle: 'sudipta-roy',
       status: 'Speaking Soon',
       socials: { twitter: '#', linkedin: 'https://www.linkedin.com/in/sudipto-roy-672a08144?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkHH%2BYPNbS5eFWc%2Fe7MaHjg%3D%3D' },
@@ -109,7 +109,7 @@ const SpeakersPage = () => {
               <ProfileCard
                 key={index}
                 avatarUrl={speaker.imageUrl}
-                miniAvatarUrl={speaker.imageUrl}
+                //miniAvatarUrl={speaker.imageUrl}
                 name={speaker.name}
                 title={speaker.title}
                 handle={speaker.handle}

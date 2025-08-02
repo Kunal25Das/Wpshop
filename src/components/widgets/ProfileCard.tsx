@@ -68,7 +68,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
   enableTilt = true,
   enableMobileTilt = false,
   mobileTiltSensitivity = 5,
-  miniAvatarUrl,
+  //miniAvatarUrl,
   name = "Javi A. Torres",
   title = "Software Engineer",
   handle = "javicodes",
@@ -340,7 +340,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
             {showUserInfo && (
               <div className="pc-user-info">
                 <div className="pc-user-details">
-                  <div className="pc-mini-avatar">
+                  {/* <div className="pc-mini-avatar">
                     <Image
                       src={miniAvatarUrl || avatarUrl}
                       alt={`${name || "User"} mini avatar`}
@@ -352,7 +352,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                         target.src = typeof avatarUrl === 'string' ? avatarUrl : avatarUrl.src;
                       }}
                     />
-                  </div>
+                  </div> */}
                   <div className="pc-user-text">
                     <div className="pc-handle">@{handle}</div>
                     <div className="pc-status">{status}</div>
@@ -373,7 +373,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
           <div className="pc-content">
             <div className="pc-details">
               <h3>{name}</h3>
-              <p>{title}</p>
+              <p className="whitespace-pre-line">{title}</p>
             </div>
           </div>
         </div>
