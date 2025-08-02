@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import CountdownTimer from "./CountDown";
+import Script from "next/script";
 
 const Hero = () => {
   const targetDate = new Date("2025-08-30T11:00:00+05:30");
@@ -14,9 +15,21 @@ const Hero = () => {
         </h1>
         <p className="text-lg md:text-2xl mb-8">Where Community Meets Code</p>
         <CountdownTimer targetDate={targetDate} />
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
-          Register Now
+        <button className="my-4">
+          <a
+            href="https://lu.ma/event/evt-zVPefEq1DHDLDCm"
+            className="bg-white hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-lg transition duration-300 w-[10rem] text-center"
+            data-luma-action="checkout"
+            data-luma-event-id="evt-zVPefEq1DHDLDCm"
+          >
+            Register Now
+          </a>
         </button>
+
+        <Script
+          id="luma-checkout"
+          src="https://embed.lu.ma/checkout-button.js"
+        />
       </div>
     </section>
   );
