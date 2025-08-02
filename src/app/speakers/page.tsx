@@ -68,18 +68,18 @@ const SpeakersPage = () => {
               >
                 <div className="relative w-32 h-32 mx-auto mb-4">
                   <Image
-                    src={speaker.imageUrl}
+                    src={speaker.imageUrl||""}
                     alt={`Photo of ${speaker.name}`}
                     layout="fill"
-                    objectFit="cover"
+                    //objectFit="cover"
                     className="rounded-full"
                   />
                 </div>
                 <h3 className="text-xl font-bold">{speaker.name}</h3>
                 <p className="text-gray-400 mb-4">{speaker.title}</p>
                 <div className="flex justify-center gap-4">
-                  <Link href={speaker.socials.twitter}><a className="text-blue-400 hover:underline">Twitter</a></Link>
-                  <Link href={speaker.socials.linkedin}><a className="text-blue-400 hover:underline">LinkedIn</a></Link>
+                  <Link href={speaker.socials?.twitter??"#"}><div className="text-blue-400 hover:underline">Twitter</div></Link>
+                  <Link href={speaker.socials?.linkedin??"#"}><div className="text-blue-400 hover:underline">LinkedIn</div></Link>
                 </div>
               </div>
             )
