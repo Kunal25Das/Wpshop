@@ -14,7 +14,6 @@ const Hero = () => {
           WordPress Community Kolkata <br/> X <br/> G.C.E.T.T.S
         </h1>
         <p className="text-lg md:text-2xl mb-8 font-audiowide">Coming Soon at G.C.E.T.T.S. <br/> #SpreadTheWord.</p>
-        <p className="text-lg md:text-2xl mb-8 font-audiowide">Coming Soon at G.C.E.T.T.S. <br/> #SpreadTheWord.</p>
         <CountdownTimer targetDate={targetDate} />
         <button className="my-4">
           <a
