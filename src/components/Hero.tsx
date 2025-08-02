@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import CountdownTimer from "@/components/widgets/CountDown";
+import React from "react";
+import CountdownTimer from "./CountDown";
 
 const Hero = () => {
   const targetDate = new Date("2025-08-30T11:00:00+05:30");
