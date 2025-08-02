@@ -5,13 +5,13 @@ import { ISourceOptions, MoveDirection, type Engine } from "@tsparticles/engine"
 import { loadSlim } from "@tsparticles/slim";
 import Particles, {initParticlesEngine } from "@tsparticles/react";
 import { Geist, Geist_Mono } from "next/font/google";
+import { brunoAce, orbitron, quantico, audiowide, tourney, geostarFill } from "@/styles/Fonts";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -178,7 +178,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${brunoAce.variable} ${orbitron.variable} ${quantico.variable} ${audiowide.variable} ${tourney.variable} ${geostarFill.variable} antialiased`}
       >
         {init && (
           <Particles

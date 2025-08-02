@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import CountdownTimer from "./CountDown";
+import React from "react";
+import CountdownTimer from "@/components/widgets/CountDown";
 import Script from "next/script";
 
 const Hero = () => {
@@ -10,10 +10,10 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center text-white text-center">
       <div className="relative z-10 p-4">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4">
-          WordPress x GCETTS
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 font-bruno-ace">
+          WordPress Community Kolkata <br/> X <br/> G.C.E.T.T.S
         </h1>
-        <p className="text-lg md:text-2xl mb-8">Where Community Meets Code</p>
+        <p className="text-lg md:text-2xl mb-8 font-audiowide">At G.C.E.T.T.S Auditorium. Spread the Word.</p>
         <CountdownTimer targetDate={targetDate} />
         <button className="my-4">
           <a
