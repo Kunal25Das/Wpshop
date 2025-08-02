@@ -7,7 +7,7 @@ import Background from '@/components/Background';
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <Background />
       <div className="absolute top-0 left-0 w-full z-50">
         <Hero />

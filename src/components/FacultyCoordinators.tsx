@@ -4,50 +4,63 @@ import Image from 'next/image';
 const FacultyCoordinators = () => {
   const faculty = [
     {
-      name: 'Dr. Faculty One',
-      title: 'Professor, Dept. of Computer Science',
-      imageUrl: 'https://placehold.co/400x400/1a1a1a/ffffff?text=Photo',
+      name: 'Mr. Preetam Kumar Sur',
+      title: 'Assistant Professor & HOD, CSE',
+      imageUrl: '/faculty/doge.jpg',
     },
     {
-      name: 'Dr. Faculty Two',
-      title: 'Associate Professor, Dept. of IT',
-      imageUrl: 'https://placehold.co/400x400/1a1a1a/ffffff?text=Photo',
+      name: 'Dr. Dipak Kumar Kole',
+      title: 'Professor, CSE',
+      imageUrl: '/faculty/doge.jpg',
     },
     {
-      name: 'Dr. Faculty Three',
-      title: 'Head of Department, ECE',
-      imageUrl: 'https://placehold.co/400x400/1a1a1a/ffffff?text=Photo',
+      name: 'Mr. Biswajit Sanyal',
+      title: 'Assistant Professor & HOD, IT',
+      imageUrl: '/faculty/doge.jpg',
     },
-     {
-      name: 'Dr. Faculty Four',
-      title: 'Assistant Professor, EE',
-      imageUrl: 'https://placehold.co/400x400/1a1a1a/ffffff?text=Photo',
+    {
+      name: 'Mr. Pijush Kanti Kumar',
+      title: 'Assistant Professor, IT',
+      imageUrl: '/faculty/doge.jpg',
     },
   ];
 
   return (
-    <section className="py-20 text-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">
+    <section className="py-10 text-white">
+      <div className="container mx-auto px-4 w-full">
+        <h2 className="text-3xl font-bold text-center mb-8">
           Esteemed Faculty Coordinators
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className='w-full mx-auto flex justify-center gap-8 items-center mb-8'>
+          <div className="relative w-70 h-64 flex flex-col items-center ">
+            <Image
+              src={`/faculty/doge.jpg`}
+              alt={`Photo of {OIC}`}
+              layout="fill"
+              className="rounded-2xl"
+            />
+          </div>
+          <div className="bg-black/30 rounded-2xl border border-white/40 p-10 backdrop-blur-sm">
+            <h3 className="text-xl font-bold">Prof. (Dr.) Sudipta Sekhar Mahish</h3>
+            <p className="text-gray-400">Officer-in-Charge, GCETTS</p>
+            <p className="text-gray-400">President, Entropy - Coding Club</p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {faculty.map((coordinator, index) => (
-            <div
-              key={index}
-              className="bg-gray-800/50 rounded-lg p-6 text-center"
-            >
-              <div className="relative w-32 h-32 mx-auto mb-4">
+            <div key={index} className="flex flex-col items-center">
+              <div className="relative w-70 h-64">
                 <Image
-                  src={`/vercel.svg`}
+                  src={coordinator.imageUrl}
                   alt={`Photo of ${coordinator.name}`}
                   layout="fill"
-                  // objectFit="cover"
-                  className="rounded-full"
+                  className="rounded-2xl"
                 />
               </div>
-              <h3 className="text-xl font-bold">{coordinator.name}</h3>
-              <p className="text-gray-400">{coordinator.title}</p>
+              <div className="bg-black/30 rounded-2xl border border-white/40 py-2 px-4 transform -translate-y-1/2 backdrop-blur-sm">
+                <h3 className="text-xl font-bold">{coordinator.name}</h3>
+                <p className="text-gray-400">{coordinator.title}</p>
+              </div>
             </div>
           ))}
         </div>
