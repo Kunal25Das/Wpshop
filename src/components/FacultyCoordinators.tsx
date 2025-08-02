@@ -6,22 +6,22 @@ const FacultyCoordinators = () => {
     {
       name: 'Mr. Preetam Kumar Sur',
       title: 'Assistant Professor & HOD, CSE',
-      imageUrl: '/faculty/doge.jpg',
+      imageUrl: '/faculty/pks.png',
     },
     {
       name: 'Dr. Dipak Kumar Kole',
       title: 'Professor, CSE',
-      imageUrl: '/faculty/doge.jpg',
+      imageUrl: '/faculty/dkk.png',
     },
     {
       name: 'Mr. Biswajit Sanyal',
       title: 'Assistant Professor & HOD, IT',
-      imageUrl: '/faculty/doge.jpg',
+      imageUrl: '/faculty/bs.jpg',
     },
     {
       name: 'Mr. Pijush Kanti Kumar',
       title: 'Assistant Professor, IT',
-      imageUrl: '/faculty/doge.jpg',
+      imageUrl: '/faculty/pkk.png',
     },
   ];
 
@@ -32,9 +32,9 @@ const FacultyCoordinators = () => {
           Esteemed Faculty Coordinators
         </h2>
         <div className='w-full mx-auto flex justify-center gap-8 items-center mb-8'>
-          <div className="relative w-70 h-64 flex flex-col items-center ">
+          <div className="relative w-64 h-64 flex flex-col items-center ">
             <Image
-              src={`/faculty/doge.jpg`}
+              src={`/faculty/ssm.png`}
               alt={`Photo of {OIC}`}
               layout="fill"
               className="rounded-2xl"
@@ -49,7 +49,7 @@ const FacultyCoordinators = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {faculty.map((coordinator, index) => (
             <div key={index} className="flex flex-col items-center">
-              <div className="relative w-70 h-64">
+              <div className="relative w-64 h-64">
                 <Image
                   src={coordinator.imageUrl}
                   alt={`Photo of ${coordinator.name}`}
