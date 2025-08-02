@@ -1,12 +1,24 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { ISourceOptions, MoveDirection, type Engine } from "@tsparticles/engine";
+import {
+  ISourceOptions,
+  MoveDirection,
+  type Engine,
+} from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
-import Particles, {initParticlesEngine } from "@tsparticles/react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { Geist, Geist_Mono } from "next/font/google";
-import { brunoAce, orbitron, quantico, audiowide, tourney, geostarFill } from "@/styles/Fonts";
+import {
+  brunoAce,
+  orbitron,
+  quantico,
+  audiowide,
+  tourney,
+  geostarFill,
+} from "@/styles/Fonts";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,15 +36,9 @@ export default function RootLayout({
 }>) {
   const [init, setInit] = useState(false);
 
-  // useEffect(() => {
-  //   initParticles();
-  // }, []);
-
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await initParticles(engine); // Or loadFull/loadBasic as needed
-    }).then(() => {
-      setInit(true);
     });
   }, []);
 
@@ -40,72 +46,6 @@ export default function RootLayout({
     await loadSlim(engine);
     setInit(true);
   }, []);
-
-  // const particlesOptions = {
-  //   background: {
-  //     color: {
-  //       value: '#0d0d0d',
-  //     },
-  //   },
-  //   fpsLimit: 60,
-  //   interactivity: {
-  //     events: {
-  //       onHover: {
-  //         enable: true,
-  //         mode: 'repulse',
-  //       },
-  //       resize: true,
-  //     },
-  //     modes: {
-  //       repulse: {
-  //         distance: 100,
-  //         duration: 0.4,
-  //       },
-  //     },
-  //   },
-  //   particles: {
-  //     color: {
-  //       value: '#ffffff',
-  //     },
-  //     links: {
-  //       color: '#ffffff',
-  //       distance: 150,
-  //       enable: true,
-  //       opacity: 0.2,
-  //       width: 1,
-  //     },
-  //     collisions: {
-  //       enable: true,
-  //     },
-  //     move: {
-  //       direction: 'none',
-  //       enable: true,
-  //       outModes: {
-  //         default: 'bounce',
-  //       },
-  //       random: false,
-  //       speed: 1,
-  //       straight: false,
-  //     },
-  //     number: {
-  //       density: {
-  //         enable: true,
-  //         area: 800,
-  //       },
-  //       value: 80,
-  //     },
-  //     opacity: {
-  //       value: 0.2,
-  //     },
-  //     shape: {
-  //       type: 'circle',
-  //     },
-  //     size: {
-  //       value: { min: 1, max: 3 },
-  //     },
-  //   },
-  //   detectRetina: true,
-  // };
 
   const particlesOptions = {
     background: {
@@ -180,6 +120,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${brunoAce.variable} ${orbitron.variable} ${quantico.variable} ${audiowide.variable} ${tourney.variable} ${geostarFill.variable} antialiased`}
       >
+        <Navbar/>
         {init && (
           <Particles
             id="tsparticles"

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useCallback, useMemo } from "react";
 import Image, { StaticImageData } from "next/image";
-import "../../styles.module.css/ProfileCard.css";
+import "../../styles/ProfileCard.css";
 
 interface ProfileCardProps {
   avatarUrl: string | StaticImageData;
