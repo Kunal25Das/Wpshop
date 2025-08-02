@@ -39,10 +39,10 @@ const FacultyCoordinators = () => {
             >
               <div className="relative w-32 h-32 mx-auto mb-4">
                 <Image
-                  src={coordinator.imageUrl}
+                  src={`/vercel.svg`}
                   alt={`Photo of ${coordinator.name}`}
                   layout="fill"
-                  objectFit="cover"
+                  // objectFit="cover"
                   className="rounded-full"
                 />
               </div>

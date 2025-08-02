@@ -14,9 +14,9 @@ const About = () => {
           </div>
           <div className="text-center md:text-right">
             <Link href="/speakers">
-              <a className="inline-block bg-transparent hover:bg-blue-600 text-white font-bold py-3 px-8 border border-white rounded-full transition duration-300">
+              <div className="inline-block bg-transparent hover:bg-blue-600 text-white font-bold py-3 px-8 border border-white rounded-full transition duration-300">
                 Meet The Speakers
-              </a>
+              </div>
             </Link>
           </div>
         </div>

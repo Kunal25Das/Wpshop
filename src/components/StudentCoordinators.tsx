@@ -6,32 +6,32 @@ const StudentCoordinators = () => {
     {
       name: 'Student One',
       role: 'Lead Coordinator',
-      imageUrl: 'https://placehold.co/400x400/1a1a1a/ffffff?text=Photo',
+      imageUrl: '/vercel.svg',
     },
     {
       name: 'Student Two',
       role: 'Marketing Lead',
-      imageUrl: 'https://placehold.co/400x400/1a1a1a/ffffff?text=Photo',
+      imageUrl: '/vercel.svg',
     },
     {
       name: 'Student Three',
       role: 'Sponsorships',
-      imageUrl: 'https://placehold.co/400x400/1a1a1a/ffffff?text=Photo',
+      imageUrl: '/vercel.svg',
     },
     {
       name: 'Student Four',
       role: 'Logistics',
-      imageUrl: 'https://placehold.co/400x400/1a1a1a/ffffff?text=Photo',
+      imageUrl: '/vercel.svg',
     },
     {
       name: 'Student Five',
       role: 'Web Developer',
-      imageUrl: 'https://placehold.co/400x400/1a1a1a/ffffff?text=Photo',
+      imageUrl: '/vercel.svg',
     },
     {
       name: 'Student Six',
       role: 'Volunteer',
-      imageUrl: 'https://placehold.co/400x400/1a1a1a/ffffff?text=Photo',
+      imageUrl: '/vercel.svg',
     },
   ];
 
@@ -48,11 +48,10 @@ const StudentCoordinators = () => {
               className="bg-gray-800/50 rounded-lg p-6 text-center"
             >
               <div className="relative w-32 h-32 mx-auto mb-4">
-                <Image
-                  src={student.imageUrl}
-                  alt={`Photo of ${student.name}`}
+                <Image src={`/vercel.svg`}
+                alt={`/vercel.svg of ${student.name}`}
                   layout="fill"
-                  objectFit="cover"
+                  // objectFit="cover"
                   className="rounded-full"
                 />
               </div>
