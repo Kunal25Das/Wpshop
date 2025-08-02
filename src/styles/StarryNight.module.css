@@ -1,0 +1,55 @@
+.star {
+    animation-name: blink, twinkle, float;
+    animation-duration: var(--animation-blink-speed), var(--animation-twinkle-speed), var(--animation-float-speed);
+    animation-timing-function: ease-in-out, linear, ease-in-out;
+    animation-iteration-count: infinite, infinite, infinite;
+    animation-direction: alternate, normal, alternate;
+    transform: translate(-50%, -50%);
+    transition: all 300ms ease-out;
+}
+
+@keyframes blink {
+    0% {
+        opacity: calc(var(--star-opacity) * 0.1);
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    50% {
+        opacity: min(1, calc(var(--star-opacity) * 1.5));
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        opacity: calc(var(--star-opacity) * 0.2);
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        box-shadow:
+            0 0 calc(5px * var(--glow-intensity)) hsl(var(--star-hue), 80%, 70%),
+            0 0 calc(10px * var(--glow-intensity)) hsl(var(--star-hue), 60%, 50%);
+    }
+    25% {
+        box-shadow:
+            0 0 calc(15px * var(--glow-intensity)) hsl(var(--star-hue), 90%, 80%),
+            0 0 calc(25px * var(--glow-intensity)) hsl(var(--star-hue), 70%, 60%),
+            0 0 calc(35px * var(--glow-intensity)) hsl(var(--star-hue), 50%, 40%);
+    }
+    75% {
+        box-shadow:
+            0 0 calc(8px * var(--glow-intensity)) hsl(var(--star-hue), 85%, 75%),
+            0 0 calc(18px * var(--glow-intensity)) hsl(var(--star-hue), 65%, 55%);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(calc(-50% + var(--float-x-range)), calc(-50% + var(--float-y-range)));
+    }
+    100% {
+        transform: translate(calc(-50% + var(--float-x-range) * 0.3), calc(-50% + var(--float-y-range) * 0.3));
+    }
+}

@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@theme {
+  --font-geist-sans: "Geist Sans", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-bruno-ace: "Bruno Ace", sans-serif;
+  --font-quantico: "Quantico", sans-serif;
+  --font-audiowide: "Audiowide", sans-serif;
+  --font-tourney: "Tourney", sans-serif;
+  --font-geostar-fill: "Geostar Fill", sans-serif;
+}
+
 body {
   background-color: black;
 }
+
