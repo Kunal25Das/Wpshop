@@ -19,6 +19,7 @@ import {
 } from "@/styles/Fonts";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -136,6 +137,7 @@ export default function RootLayout({
           />
         )}
         <div className="relative z-1">{children}</div>
+        <Footer />
       </body>
     </html>
   );
