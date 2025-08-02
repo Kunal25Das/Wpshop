@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between max-w-6xl mx-auto">
             <div className="flex items-center space-x-2">
               <span className="text-white font-medium text-lg">
-                WordPress&#x000D7;GCETTS
+                Entropy
               </span>
             </div>
 
@@ -28,10 +28,10 @@ const Navbar = () => {
             {!isMobile && (
               <div className="flex items-center space-x-8">
                 <a
-                  href="/"
+                  href="/event"
                   className="text-white hover:text-gray-300 transition-colors duration-200 font-medium"
                 >
-                  Home
+                  Event
                 </a>
                 <a
                   href="/speakers"
@@ -55,10 +55,10 @@ const Navbar = () => {
           {isOpen && (
             <div className="md:hidden mt-4 space-y-4">
               <a
-                href="/"
+                href="/event"
                 className="block text-white hover:text-gray-300 transition-colors duration-200 font-medium"
               >
-                Home
+                Event
               </a>
               <a
                 href="/speakers"

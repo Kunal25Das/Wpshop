@@ -373,7 +373,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
           <div className="pc-content">
             <div className="pc-details">
               <h3>{name}</h3>
-              <p className="whitespace-pre-line">{title}</p>
+              <div className="whitespace-pre-line">{title}</div>
             </div>
           </div>
         </div>

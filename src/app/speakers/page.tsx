@@ -26,7 +26,7 @@ const SpeakersPage = () => {
     {
       name: 'Subhasis Chatterjee',
       title: 'Founder & CEO ConnectIndia',
-      imageUrl: '/SubhasisUncle.jpg',
+      imageUrl: '/speakers/SubhasisUncle.png',
       handle: 'subhasischatterjee',
       status: 'Speaking Soon',
       socials: { twitter: '#', linkedin: 'https://www.linkedin.com/in/subhasischatterjee1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2Kcf6CZ7QGqBiNT7V7OCEg%3D%3D' },
@@ -34,7 +34,7 @@ const SpeakersPage = () => {
     {
       name: 'Subrata Sarkar',
       title: 'Web & Platform developer,\nemfluence, USA',
-      imageUrl: '/SubrataUncle.jpg',
+      imageUrl: '/speakers/SubrataUncle.png',
       handle: 'sarkarsubrata',
       status: 'Speaking Soon',
       socials: { twitter: '#', linkedin: 'https://www.linkedin.com/in/sarkarsubrata?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BILoknM74ScqRFOyv13ZRwQ%3D%3D' },
@@ -42,7 +42,7 @@ const SpeakersPage = () => {
     {
       name: 'Tristup Ghosh',
       title: 'Consulting',
-      imageUrl: '/TristupUncle.jpg',
+      imageUrl: '/speakers/TristupUncle.jpg',
       handle: 'tristup-ghosh',
       status: 'Speaking Soon',
       socials: { twitter: '#', linkedin: 'https://www.linkedin.com/in/tristup-ghosh-89659863?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLV1eAF45Sp2muF96zO5OTg%3D%3D' },
@@ -50,7 +50,7 @@ const SpeakersPage = () => {
     {
       name: 'Ritika Roy',
       title: 'Content & Social Media Marketer',
-      imageUrl: '/RitikaDidi.jpg',
+      imageUrl: '/speakers/RitikaDidi.png',
       handle: 'ritika-roy',
       status: 'Speaking Soon',
       socials: { twitter: '#', linkedin: 'https://www.linkedin.com/in/ritika-roy-8792b257?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXcK2qhKFTFWkVmSJDqtq8w%3D%3D' },
@@ -58,7 +58,7 @@ const SpeakersPage = () => {
     {
       name: 'Sudipta Roy',
       title: 'Software Engineer,\nVirtual Employee Pvt. Ltd.',
-      imageUrl: '/SudiptoDa.png',
+      imageUrl: '/speakers/SudiptoDa.png',
       handle: 'sudipta-roy',
       status: 'Speaking Soon',
       socials: { twitter: '#', linkedin: 'https://www.linkedin.com/in/sudipto-roy-672a08144?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkHH%2BYPNbS5eFWc%2Fe7MaHjg%3D%3D' },

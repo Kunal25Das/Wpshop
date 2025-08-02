@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, ReactNode, useRef } from "react";
+import Image from "next/image";
 import {
   motion,
   useAnimation,
@@ -67,32 +68,32 @@ const CodeClubAbout: React.FC = () => {
   const pastEvents: Event[] = [
     {
       id: 1,
-      name: "Hackathon 2024",
-      date: "March 15, 2024",
-      image: "/api/placeholder/400/300",
-      description: "24-hour coding marathon with amazing projects",
+      name: "Innova 2025",
+      date: "May 3, 2025",
+      image: "/past/innova.jpg",
+      description: "8-hour Coding marathon with amazing projects",
     },
     {
       id: 2,
-      name: "Web Dev Workshop",
-      date: "February 20, 2024",
-      image: "/api/placeholder/400/300",
-      description: "Full-stack development fundamentals",
+      name: "VS Code Workshop",
+      date: "April 24, 2025",
+      image: "/past/vscode.jpg",
+      description: "Development Setup fundamentals",
     },
-    {
-      id: 3,
-      name: "AI/ML Seminar",
-      date: "January 25, 2024",
-      image: "/api/placeholder/400/300",
-      description: "Introduction to machine learning concepts",
-    },
-    {
-      id: 4,
-      name: "Open Source Day",
-      date: "December 10, 2023",
-      image: "/api/placeholder/400/300",
-      description: "Contributing to open source projects",
-    },
+    // {
+    //   id: 3,
+    //   name: "AI/ML Seminar",
+    //   date: "January 25, 2024",
+    //   image: "/api/placeholder/400/300",
+    //   description: "Introduction to machine learning concepts",
+    // },
+    // {
+    //   id: 4,
+    //   name: "Open Source Day",
+    //   date: "December 10, 2023",
+    //   image: "/api/placeholder/400/300",
+    //   description: "Contributing to open source projects",
+    // },
   ];
 
   const teamMembers: TeamMember[] = [
@@ -197,7 +198,7 @@ const CodeClubAbout: React.FC = () => {
             variants={fadeInUp}
             className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed"
           >
-            We are a passionate community of developers, designers, and tech
+            Entropy (Coding Club, GCETTS) is a passionate community of developers, designers, and tech
             enthusiasts dedicated to fostering innovation and collaboration. Our
             mission is to bridge the gap between academic learning and
             real-world application, empowering students to build meaningful
@@ -235,8 +236,9 @@ const CodeClubAbout: React.FC = () => {
                 className="bg-gray-900/60 rounded-xl overflow-hidden backdrop-blur-sm border border-slate-700/30 cursor-pointer"
                 onClick={() => setSelectedEvent(event)}
               >
-                <div className="h-48 bg-gradient-to-br from-purple-600 to-cyan-600 flex items-center justify-center">
-                  <span className="text-white font-semibold">{event.name}</span>
+                <div className="h-48 w-full overflow-hidden z-[-1] bg-gradient-to-br from-purple-600 to-cyan-600 flex items-center justify-center relative">
+                  <Image src={event.image} alt={event.name} layout="fill" objectFit="cover" />
+                  {/* <span className="text-white font-semibold">{event.name}</span> */}
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold text-white mb-2">
@@ -270,7 +272,7 @@ const CodeClubAbout: React.FC = () => {
             whileTap={{ scale: 0.95 }}
             className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-cyan-500/25"
           >
-            <a href="/">
+            <a href="https://forms.gle/ywCU3gV5y9jUPghN6" target="_blank" rel="noopener noreferrer">
               Get Involved <IconExternalLink className="inline ml-2 w-5 h-5" />
             </a>
           </motion.button>

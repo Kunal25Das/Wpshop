@@ -311,7 +311,7 @@
   -webkit-text-stroke: 1px black;
 }
 
-.pc-details p {
+.pc-details div{
   font-weight: 600;
   position: relative;
   top: -12px;
@@ -361,7 +361,7 @@
     -webkit-text-stroke: 1px black;
   }
 
-  .pc-details p {
+  .pc-details div {
     font-size: 14px;
   }
 
@@ -410,7 +410,7 @@
     -webkit-text-stroke: 1px black;
   }
 
-  .pc-details p {
+  .pc-details div {
     font-size: 12px;
     top: -8px;
   }
@@ -458,7 +458,7 @@
     -webkit-text-stroke: 1px black;
   }
 
-  .pc-details p {
+  .pc-details div {
     font-size: 11px;
   }
 
