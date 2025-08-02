@@ -34,7 +34,7 @@ export default function RootLayout({
     }).then(() => {
       setInit(true);
     });
-  }, [init]);
+  });
 
   const initParticles = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
