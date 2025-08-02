@@ -293,7 +293,7 @@
 .pc-details {
   width: 100%;
   position: absolute;
-  bottom: 8em;
+  bottom: 6em;
   display: flex;
   flex-direction: column;
 }
@@ -353,7 +353,7 @@
   }
 
   .pc-details {
-    bottom: 8em;
+    bottom: 6em;
   }
 
   .pc-details h3 {

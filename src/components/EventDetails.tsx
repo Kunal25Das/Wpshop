@@ -16,15 +16,15 @@ const EventDetails = () => {
     <div className="min-h-screen relative flex flex-col justify-center items-center">
       {/* <Galaxy className="absolute inset-0 w-full h-full" style={{ zIndex: 1 }} /> */}
       <div className="relative z-10 p-8 text-white w-full">
-        <h1 className="text-5xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+        <h1 className="text-5xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent font-orbitron">
           Event Details
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto justify-items-center">
           {eventDetails.map((detail, idx) => {
             const IconComponent = detail.icon;
             return (
-              <SpotlightCard 
-                key={idx} 
+              <SpotlightCard
+                key={idx}
                 className="aspect-square p-4 bg-slate-900/40 backdrop-blur-lg border border-slate-700/50 rounded-2xl hover:border-slate-500/50 transition-all duration-300 group w-full max-w-sm"
                 spotlightColor={detail.spotlightColor}
               >

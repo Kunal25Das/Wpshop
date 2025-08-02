@@ -113,7 +113,7 @@ const StarryNight: FC<StarryNightProps> = ({
     return (
         <div
             ref={containerRef}
-            className="relative w-full h-screen bg-black overflow-hidden"
+            className="relative w-full h-full bg-black overflow-hidden"
         >
             {/* Stars */}
             {stars.map((star) => {
@@ -144,11 +144,9 @@ const StarryNight: FC<StarryNightProps> = ({
                 );
             })}
 
-            {/* Inject dynamic CSS */}
             <style dangerouslySetInnerHTML={{ __html: dynamicCss }} />
 
-            {/* Info overlay */}
-            <div className="absolute top-4 left-4 text-white/70 text-sm"></div>
+            <div className="absolute top-0 left-0 text-sm"></div>
         </div>
     );
 };

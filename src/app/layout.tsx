@@ -19,7 +19,7 @@ import {
 } from "@/styles/Fonts";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,7 +41,7 @@ export default function RootLayout({
     initParticlesEngine(async (engine) => {
       await initParticles(engine); // Or loadFull/loadBasic as needed
     });
-  }, []);
+  });
 
   const initParticles = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
@@ -51,7 +51,7 @@ export default function RootLayout({
   const particlesOptions = {
     background: {
       color: {
-        value: "#0d0d0d",
+        value: "black",
       },
     },
     fpsLimit: 60,
@@ -74,14 +74,14 @@ export default function RootLayout({
     },
     particles: {
       color: {
-        value: "#ffffff",
-      },
+        value: [ "#cc79f9", "#11c0fa", "#bf3eff", "#ff77ff", "#cba0f4", "#79dcff", "#5a4fcf", "#f542a7", "#58427c" ]
+        },
       links: {
         color: "#ffffff",
         distance: 150,
         enable: true,
         opacity: 0.2,
-        width: 1,
+        width: 2,
       },
       collisions: {
         enable: true,
@@ -104,13 +104,13 @@ export default function RootLayout({
         value: 80,
       },
       opacity: {
-        value: 0.2,
+        value: 0.3,
       },
       shape: {
         type: "circle",
       },
       size: {
-        value: { min: 1, max: 3 },
+        value: { min: 2, max: 5 },
       },
     },
     detectRetina: true,
@@ -137,7 +137,7 @@ export default function RootLayout({
           />
         )}
         <div className="relative z-1">{children}</div>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { TimeLeft } from "@/types/TimeLeft";
 
 export default function CountdownTimer({ targetDate }: { targetDate: Date }) {
-  const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
+const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
 
   useEffect(() => {
     const getTimeLeft = () => {
