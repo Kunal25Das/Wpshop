@@ -30,8 +30,8 @@ const StudentCoordinators = () => {
     },
     {
       name: 'Soumili Polley',
-      role: 'Community Head',
-      imageUrl: '/student/Comittee.jpeg',
+      role: 'Committee Head',
+      imageUrl: '/student/Comittee.jpg',
     }
   ];
 
