@@ -2,24 +2,7 @@
 
 import React from 'react';
 import ProfileCard from '@/components/widgets/ProfileCard';
-
-interface Speaker {
-  name: string;
-  title: string;
-  imageUrl: string;
-  handle?: string;
-  status?: string;
-  socials: {
-    twitter: string;
-    linkedin: string;
-  };
-}
-
-interface RevealingSoon {
-  revealingSoon: true;
-}
-
-type SpeakerData = Speaker | RevealingSoon;
+import { Speaker, type SpeakerData } from '@/types/Speaker';
 
 const SpeakersPage = () => {
   const speakers: SpeakerData[] = [
