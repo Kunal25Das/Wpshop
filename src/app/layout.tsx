@@ -19,7 +19,7 @@ import {
 } from "@/styles/Fonts";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -74,8 +74,18 @@ export default function RootLayout({
     },
     particles: {
       color: {
-        value: [ "#cc79f9", "#11c0fa", "#bf3eff", "#ff77ff", "#cba0f4", "#79dcff", "#5a4fcf", "#f542a7", "#58427c" ]
-        },
+        value: [
+          "#cc79f9",
+          "#11c0fa",
+          "#bf3eff",
+          "#ff77ff",
+          "#cba0f4",
+          "#79dcff",
+          "#5a4fcf",
+          "#f542a7",
+          "#58427c",
+        ],
+      },
       links: {
         color: "#ffffff",
         distance: 150,
@@ -119,25 +129,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${brunoAce.variable} ${orbitron.variable} ${quantico.variable} ${audiowide.variable} ${tourney.variable} ${geostarFill.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${brunoAce.variable} ${orbitron.variable} ${quantico.variable} ${audiowide.variable} ${tourney.variable} ${geostarFill.variable} antialiased min-h-max absolute top-0 left-0 w-full h-full bg-black text-white`}
       >
-        <Navbar/>
-        {init && (
-          <Particles
-            id="tsparticles"
-            options={particlesOptions as ISourceOptions}
-            style={{
-              position: "fixed",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              zIndex: -1,
-            }}
-          />
-        )}
-        <div className="relative z-1">{children}</div>
-        {/* <Footer /> */}
+        <div className="min-h-max flex flex-col relative">
+          <Navbar />
+          {init && (
+            <Particles
+              id="tsparticles"
+              options={particlesOptions as ISourceOptions}
+              style={{
+                position: "fixed",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "fit-content",
+                zIndex: -1,
+              }}
+            />
+          )}
+          <div className="flex-grow relative z-1">{children}</div>
+          <div className="relative z-10">
+            <Footer />
+          </div>
+        </div>
       </body>
     </html>
   );
