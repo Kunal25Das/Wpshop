@@ -321,8 +321,8 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
     >
       <section ref={cardRef} className="pc-card">
         <div className="pc-inside">
-          <div className="pc-shine"/>
-          <div className="pc-glare" />
+          {/* <div className="pc-shine"/>
+          <div className="pc-glare" /> */}
           <div className="pc-content pc-avatar-content ">
             <Image
               className="avatar"
