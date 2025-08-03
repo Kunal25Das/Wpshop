@@ -1,12 +1,14 @@
 import React from "react";
 import StarryNight from "@/components/widgets/StarryNight";
-import DarkVeil from "@/components/widgets/DarkVeil";
 
 const Background: React.FC = () => {
   return (
     <div className="absolute">
-      <div className="relative overflow-hidden w-screen h-[75dvh]">
-        <DarkVeil />
+      <div className="relative w-screen h-[75dvh]">
+        <video autoPlay playsInline muted loop poster="/fallback/poster720p.png" className="object-cover w-full h-full">
+          <source src="/videos/DarkVeil720p.mp4" type ="video/mp4" media="(min-width: 768px)"/>
+          <source src="videos/DarkVeil480p.mp4" type="video/mp4" media="(max-width: 767px)"/>
+        </video>
       </div>
 
       <div className="absolute w-screen h-[200px] z-10 bg-radial from-black from-30% via-black/50 via-60% to-80% to-transparent transform -translate-y-1/4"></div>

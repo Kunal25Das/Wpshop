@@ -141,9 +141,10 @@ export default function RootLayout({
                 position: "fixed",
                 top: 0,
                 left: 0,
-                width: "100%",
-                height: "fit-content",
+                width: "90%",
+                height: "100%",
                 zIndex: -1,
+                overflow: "hidden",
               }}
             />
           )}

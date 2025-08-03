@@ -41,7 +41,7 @@ const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.25 }}
-                className="text-4xl font-semibold bg-white/20 rounded px-2 py-1"
+                className="text-2xl md:text-4xl font-semibold bg-white/20 rounded px-2 py-1"
               >
                 {String(value).padStart(2, "0")}
               </motion.div>
@@ -49,7 +49,7 @@ const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
             <div className="text-sm text-gray-400 capitalize">{unit}</div>
           </div>
           {index === 3 ? null : (
-            <span className="text-5xl font-geostar-fill self-start"> : </span>
+            <span className="text-3xl md:text-5xl font-geostar-fill self-start"> : </span>
           )}
         </div>
       ))}
