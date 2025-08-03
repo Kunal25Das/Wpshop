@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { IconX, IconMenu2 } from "@tabler/icons-react";
 import useIsMobile from "@/hooks/useIsMobile";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,9 +20,13 @@ const Navbar = () => {
         >
           <div className="flex items-center justify-between max-w-6xl mx-auto">
             <div className="flex items-center space-x-2">
-              <span className="text-white font-medium text-lg">
-                Entropy
-              </span>
+              <Image
+                alt="icon"
+                src="/icons/entropy.ico"
+                height={48}
+                width={24}
+              />
+              <span className="text-white text-lg font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text">Entropy</span>
             </div>
 
             {/* Navigation Links */}

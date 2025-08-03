@@ -29,8 +29,8 @@
 }
 
 .pc-card-wrapper {
-  perspective: 500px;
-  transform: translate3d(0, 0, 0.1px);
+  /* perspective: 500px; */
+  /* transform: translate3d(0, 0, 0.1px); */
   position: relative;
   touch-action: none;
 }
@@ -44,7 +44,7 @@
   border-radius: inherit;
   transition: all 0.5s ease;
   filter: contrast(2) saturate(2) blur(36px);
-  transform: scale(0.8) translate3d(0, 0, 0.1px);
+  /* transform: scale(0.8) translate3d(0, 0, 0.1px); */
   background-size: 100% 100%;
   background-image: var(--behind-gradient);
 }
@@ -57,7 +57,7 @@
 .pc-card-wrapper:hover::before,
 .pc-card-wrapper.active::before {
   filter: contrast(1) saturate(2) blur(40px) opacity(1);
-  transform: scale(0.9) translate3d(0, 0, 0.1px);
+  /* transform: scale(0.9) translate3d(0, 0, 0.1px); */
 }
 
 .pc-card {
@@ -71,7 +71,7 @@
   animation: glow-bg 12s linear infinite;
   box-shadow: rgba(0, 0, 0, 0.8) calc((var(--pointer-from-left) * 10px) - 3px) calc((var(--pointer-from-top) * 20px) - 6px) 20px -5px;
   transition: transform 1s ease;
-  transform: translate3d(0, 0, 0.1px) rotateX(0deg) rotateY(0deg);
+  /* transform: translate3d(0, 0, 0.1px) rotateX(0deg) rotateY(0deg); */
   background-size: 100% 100%;
   background-position: 0 0, 0 0, 50% 50%, 0 0;
   background-image: radial-gradient(farthest-side circle at var(--pointer-x) var(--pointer-y), hsla(266, 100%, 90%, var(--card-opacity)) 4%, hsla(266, 50%, 80%, calc(var(--card-opacity) * 0.75)) 10%, hsla(266, 25%, 70%, calc(var(--card-opacity) * 0.5)) 50%, hsla(266, 0%, 60%, 0) 100%), radial-gradient(35% 52% at 55% 20%, #00ffaac4 0%, #073aff00 100%), radial-gradient(100% 100% at 50% 50%, #00c1ffff 1%, #073aff00 76%), conic-gradient(from 124deg at 50% 50%, #c137ffff 0%, #07c6ffff 40%, #07c6ffff 60%, #c137ffff 100%);
@@ -81,13 +81,13 @@
 .pc-card:hover,
 .pc-card.active {
   transition: none;
-  transform: translate3d(0, 0, 0.1px) rotateX(var(--rotate-y)) rotateY(var(--rotate-x));
+  /* transform: translate3d(0, 0, 0.1px) rotateX(var(--rotate-y)) rotateY(var(--rotate-x)); */
 }
 .pc-card * {
   display: grid;
   grid-area: 1/-1;
   border-radius: var(--card-radius);
-  transform: translate3d(0, 0, 0.1px);
+  /* transform: translate3d(0, 0, 0.1px); */
   pointer-events: none;
 }
 
@@ -96,7 +96,7 @@
   position: absolute;
   background-image: var(--inner-gradient);
   background-color: rgba(0, 0, 0, 0.9);
-  transform: translate3d(0, 0, 0.01px);
+  /* transform: translate3d(0, 0, 0.01px); */
 }
 
 .pc-shine {

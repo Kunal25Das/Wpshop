@@ -36,9 +36,9 @@ const StudentCoordinators = () => {
   ];
 
   return (
-    <section className="py-10 text-white bg-black/20">
+    <section className="py-10 text-white hbg-black/20">
       <div className="container mx-auto items-center">
-        <h2 className="text-3xl font-bold text-center mb-6">
+        <h2 className="text-4xl font-bold text-center mb-6">
           Student Coordinators
         </h2>
         <div className="flex flex-wrap gap-5 justify-center">
