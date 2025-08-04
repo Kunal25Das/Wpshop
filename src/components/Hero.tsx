@@ -18,6 +18,8 @@ const Hero = () => {
         <button className="my-4">
           <a
             href="https://lu.ma/event/evt-zVPefEq1DHDLDCm"
+            target="_blank" 
+            rel="noopener noreferrer"
             className="bg-white hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-lg transition duration-300 w-[10rem] text-center"
             data-luma-action="checkout"
             data-luma-event-id="evt-zVPefEq1DHDLDCm"
@@ -26,10 +28,10 @@ const Hero = () => {
           </a>
         </button>
 
-        <Script
+        {/* <Script
           id="luma-checkout"
           src="https://embed.lu.ma/checkout-button.js"
-        />
+        /> */}
       </div>
     </section>
   );
