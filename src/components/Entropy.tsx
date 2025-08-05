@@ -93,30 +93,54 @@ const CodeClubAbout: React.FC = () => {
     <div className="min-h-screen text-white font-sans">
       {/* Header */}
       {/* Mission & Vision Section */}
-      <AnimatedSection className="container mx-auto px-6 py-20 mt-20">
+      <div className="banner rounded-lg m-10 mt-30 mb-0 flex items-center p-5 flex-col md:flex-row">
+        <div className="college-logo w-[40%] md:w-[30%]"></div>
+        <div className="text-4xl md:w-[70%] text-center mb-5">
+          Government College of Engineering & Textile Technology, Serampore
+        </div>
+      </div>
+      <AnimatedSection className="container mx-auto px-6 py-20 mt-10">
+        <motion.h2
+          variants={fadeInUp}
+          className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent w-full text-center"
+        >
+          Entropy
+        </motion.h2>
+        <motion.p
+          variants={fadeInUp}
+          className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed max-w-4xl mx-auto text-center"
+        >
+          Entropy (Coding Club, GCETTS) is a passionate community of developers,
+          designers, and tech enthusiasts dedicated to fostering innovation and
+          collaboration.
+        </motion.p>
         <motion.div
           variants={stagger}
           initial="hidden"
           animate="visible"
           className="max-w-4xl mx-auto text-center"
         >
-          <motion.h2
+          <motion.h4
             variants={fadeInUp}
-            className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent"
+            className="text-2xl md:text-3xl font-bold mb-8 bg-gradient-to-r from-black to-purple-400 bg-clip-text text-transparent"
           >
-            Our Mission & Vision
-          </motion.h2>
+            Our Mission
+          </motion.h4>
           <motion.p
             variants={fadeInUp}
             className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed"
           >
-            Entropy (Coding Club, GCETTS) is a passionate community of
-            developers, designers, and tech enthusiasts dedicated to fostering
-            innovation and collaboration. Our mission is to bridge the gap
-            between academic learning and real-world application, empowering
-            students to build meaningful projects and develop industry-ready
-            skills.
+            Our mission is to bridge the gap between academic learning and
+            real-world application, empowering students to build meaningful
+            projects and develop industry-ready skills.
           </motion.p>
+
+          <motion.h4
+            variants={fadeInUp}
+            className="text-2xl md:text-3xl font-bold mb-8 bg-gradient-to-r from-black to-purple-400 bg-clip-text text-transparent"
+          >
+            Our Vision
+          </motion.h4>
           <motion.p
             variants={fadeInUp}
             className="text-lg md:text-xl text-gray-300 leading-relaxed"
