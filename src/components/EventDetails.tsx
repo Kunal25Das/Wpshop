@@ -6,7 +6,7 @@ import { IconCalendar, IconMapPin,IconBulb, IconCertificate } from '@tabler/icon
 
 const eventDetails = [
   { title: "Date and Time", content: "August 30, 2025\n11:00 AM - 4:00 PM", icon: IconCalendar, color: "from-blue-400 to-cyan-400", spotlightColor: "rgba(48, 85, 157, 0.50)" },
-  { title: "Venue", content: "GCETT, Serampore", icon: IconMapPin, color: "from-orange-400 to-red-400", spotlightColor: "rgba(189, 89, 23, 0.50)" },
+  { title: "Venue", content: "Auditorium, GCETTS", icon: IconMapPin, color: "from-orange-400 to-red-400", spotlightColor: "rgba(189, 89, 23, 0.50)" },
   { title: "What to expect", content: "Tech Talk\nWorkshop\nGames & Quizzes", icon: IconBulb, color: "from-purple-400 to-pink-400", spotlightColor: "rgba(89, 21, 163, 0.50)" },
   { title: "Perks", content: "Certificate Hardcopy\nNetworking Opportunities\nAwards", icon: IconCertificate, color: "from-indigo-400 to-purple-400", spotlightColor: "rgba(59, 57, 126, 0.50)" }
 ];
