@@ -316,14 +316,14 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
   return (
     <div
       ref={wrapRef}
-      className={`pc-card-wrapper ${className}`.trim()}
+      className={`pc-card-wrapper pointer-events-none ${className}`.trim()}
       style={cardStyle}
     >
-      <section ref={cardRef} className="pc-card">
+      <section ref={cardRef} className="pc-card pointer-events-none">
         <div className="pc-inside">
           <div className="pc-shine"/>
           {/* <div className="pc-glare" /> */}
-          <div className="pc-content pc-avatar-content ">
+          <div className="pc-content pc-avatar-content pointer-events-none">
             <Image
               className="avatar"
               src={avatarUrl}
@@ -338,7 +338,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
             />
 
             {showUserInfo && (
-              <div className="pc-user-info">
+              <div className="pc-user-info pointer-events-none">
                 <div className="pc-user-details">
                   {/* <div className="pc-mini-avatar">
                     <Image
