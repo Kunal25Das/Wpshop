@@ -22,7 +22,7 @@ const Hero = () => {
              href="https://lu.ma/event/evt-zVPefEq1DHDLDCm"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gray-300 hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-lg transition duration-300 w-[10rem] text-center text-wrap"
+            className="bg-white hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-lg transition duration-300 w-[10rem] text-center text-wrap"
             data-luma-action="checkout"
             data-luma-event-id="evt-zVPefEq1DHDLDCm"
           >
