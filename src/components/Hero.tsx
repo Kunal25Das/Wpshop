@@ -13,21 +13,20 @@ const Hero = () => {
         <h1 className="text-3xl md:text-5xl font-bold mb-4 font-bruno-ace text-pretty">
           WordPress Community Kolkata <br /> X <br /> G.C.E.T.T.S
         </h1>
-        <p className="text-lg md:text-2xl mb-8 font-audiowide">
-          Coming Soon at G.C.E.T.T.S. <br /> #SpreadTheWord.
+        <p className="text-lg md:text-2xl mb-8 font-audiowide text-wrap">
+          Wordpress Community Meet Coming Soon at G.C.E.T.T.S. <br /> #SpreadTheWord.
         </p>
         <CountdownTimer targetDate={targetDate} />
         <button className="my-4">
           <a
-            href="/event#"
-            // href="https://lu.ma/event/evt-zVPefEq1DHDLDCm"
+             href="https://lu.ma/event/evt-zVPefEq1DHDLDCm"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gray-300 hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-lg transition duration-300 w-[10rem] text-center pointer-events-none cursor-not-allowed text-wrap"
+            className="bg-gray-300 hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-lg transition duration-300 w-[10rem] text-center text-wrap"
             data-luma-action="checkout"
             data-luma-event-id="evt-zVPefEq1DHDLDCm"
           >
-            Registrations Opening Soon!
+            Register Now!
           </a>
         </button>
 
